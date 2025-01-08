@@ -1,0 +1,87 @@
+﻿/*Estilos de la pagina */
+
+h3{
+    color:white;
+    font-family: 'Lucida Console';
+    font-size:50px
+}
+
+input {
+
+background-color: black;
+color: white;
+}
+
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+/*cuerpo de la pagina web*/
+body {
+    background-color: #af7cc7; /*color*/
+    min-height: 100vh; /*altura minina*/
+    place-items: center; /*se centra los elementos en la pag web*/
+    background-image: url()
+}
+
+.calculadora {
+    background-color: #631582;
+    color: white; /*color de letra*/
+    width: 350px; /*ancho*/
+    max-width: 100%; /*ancho maximo de la pag*/
+    padding: 1.5rem; /*espacio entre botones*/
+    border-radius: 1.5rem; /*numero de columnas*/
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: .5rem; /*espacio botones*/
+    box-shadow: 0 0 20px #631582; /*sombreado de la calculadora*/
+}
+
+#num1 {
+    grid-column: 1 / 5;
+    background-color: #090c31;
+    padding: 1.5rem; /*espacio entre coontenido y el fondo*/
+    text-align: right; /*el texto se alinia a la derecha*/
+    font-size: 3rem; /*tamaño de la letra "0"*/
+    text-align: right; /*el texto se alinia a la derecha*/
+    border-radius: .5rem;
+    margin-bottom: 1.5rem;
+    font-family: monospace;
+    font-weight: bold;
+}
+
+.mi-boton {
+    background-color: #d999e5;
+    color: black; /*color de letra*/
+    border: 0;
+    padding: 1.5rem .3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .9rem;
+    cursor: pointer; /*flecha a mano cursor*/
+}
+
+#igual {
+    
+    background-color: #b65c83;
+}
+
+.mi-boton:hover {
+    background-color: #b65c83
+}
+
+/*espacio de la tecla 0*/
+#cero {
+    grid-column: span 2;
+}
+
+#eliminar
+
+/* espacio de la tecla igual se expande a una fila*/
+#igual {
+    grid-row: span 2;
+    background-color: #b65c83;
